@@ -20,10 +20,8 @@
   NSURL *jsCodeLocation;
 
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
-  NSString *host = @"mrmchase08.no-ip.org";
-  NSString *port = @"8082";
-  //host = @"localhost";
-  //port = @"8081";
+  NSString *host = @"localhost";
+  NSString *port = @"808";
   NSString *URLString = [NSString stringWithFormat:@"http://%@:%@/index.ios.bundle?platform=ios&dev=true", host, port];
   jsCodeLocation = [RCTConvert NSURL:URLString];
 
